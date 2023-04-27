@@ -19,6 +19,5 @@ public class User {
     private String name;
     @NotNull(message = "The date of birth is required.")
     @BirthDate(message = "The birth date must be greater than or equal to 18.")
-    @Past(message = "Birth date must be in past.")
     private LocalDate birthDate;
 }
